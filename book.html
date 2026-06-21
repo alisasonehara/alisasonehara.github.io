@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Session — Sonehara Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <a href="index.html">Sonehara Consulting</a><br>
+      <span class="nav-sub">for the unconventional student</span>
+    </div>
+    <a href="index.html" class="btn btn-outline">← Back Home</a>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <p class="eyebrow-label">LET'S GET STARTED</p>
+    <h1>Book Your Session</h1>
+    <p>Choose a time that works for you, then tell me a little about where you're headed. All sessions are conducted virtually or hybrid.</p>
+  </div>
+
+  <!-- PRICING NOTICE -->
+  <div class="pricing-banner">
+    <div class="pricing-inner">
+      <div class="pricing-item">
+        <span class="pricing-label">Rate</span>
+        <span class="pricing-value">$350 / hr</span>
+      </div>
+      <div class="pricing-divider"></div>
+      <div class="pricing-item">
+        <span class="pricing-label">Payment</span>
+        <span class="pricing-value">Payment info sent at least 3 days before your session. Full payment required to receive your call link.</span>
+      </div>
+      <div class="pricing-divider"></div>
+      <div class="pricing-item">
+        <span class="pricing-label">Format</span>
+        <span class="pricing-value">Virtual or Hybrid</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKING CONTENT -->
+  <section class="book-section">
+
+    <h2>Pick a time</h2>
+
+    <!-- Replace this block with your Calendly embed code -->
+    <div class="calendar-embed">
+      <div>
+        <p style="font-size:15px; color:#5A5A56; margin-bottom:12px;">📅 Calendly embed goes here</p>
+        <p style="font-size:13px; color:#888;">Replace this block with your Calendly embed code.<br>See the README for instructions.</p>
+      </div>
+    </div>
+
+    <!-- INTAKE FORM -->
+    <h2>Tell me about you</h2>
+    <!--
+      FORM SETUP: Go to formspree.io, create a free account, create a new form,
+      copy your unique form ID, and replace YOUR_FORM_ID below.
+    -->
+    <form
+      class="intake-form"
+      action="https://formspree.io/f/YOUR_FORM_ID"
+      method="POST"
+    >
+      <input type="hidden" name="_subject" value="New Consulting Inquiry — Sonehara Consulting" />
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <div class="form-group">
+        <label for="grade">What grade are you in?</label>
+        <select id="grade" name="grade" required>
+          <option value="" disabled selected>Select your grade</option>
+          <option value="9th">9th Grade</option>
+          <option value="10th">10th Grade</option>
+          <option value="11th">11th Grade</option>
+          <option value="12th">12th Grade</option>
+          <option value="college">College Student</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="goal">What's your main goal for this session?</label>
+        <select id="goal" name="goal" required>
+          <option value="" disabled selected>Select your primary goal</option>
+          <option value="application-strategy">Overall Application Strategy</option>
+          <option value="essay">Essay / Personal Statement Help</option>
+          <option value="scholarship">Scholarship Essay Help</option>
+          <option value="program-research">Program Research (Haas / Berkeley)</option>
+          <option value="major">Choosing a Major or Path</option>
+          <option value="middle-college">Middle College Pathway</option>
+          <option value="extracurriculars">Building Extracurriculars &amp; Experience</option>
+          <option value="other">Something Else</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Anything else you'd like me to know?</label>
+        <textarea
+          id="notes"
+          name="notes"
+          placeholder="Share any context, questions, or background that would help me prepare for our session..."
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Confirm My Session →</button>
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© Sonehara Consulting</span>
+    <span class="footer-contact">Questions? <a href="mailto:alisassonehara@gmail.com">alisassonehara@gmail.com</a></span>
+    <nav class="footer-links">
+      <a href="index.html">Your Path</a>
+      <a href="book.html">Your Story</a>
+      <a href="book.html">Book a Session</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
